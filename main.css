@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FAFAFA;
+  color: #4c4e61;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.main {
+  text-align: center;
+}
+
+.main .main__title {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.3;
+  padding-top: 20px;
+}
+
+.main .main__title h1 {
+  font-size: 2.2rem;
+  font-weight: 200;
+}
+
+.main .main__title h1 span {
+  font-weight: 600;
+}
+
+.main .main__title p {
+  font-size: 15px;
+  margin-top: 20px;
+  line-height: 1.5;
+  color: #a3a5ae;
+}
+
+.main .cards__wrapper {
+  margin: 30px 0;
+  text-align: initial;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .cards__wrapper .card {
+  width: 30.70175%;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.main .cards__wrapper .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.main .cards__wrapper .card .card__content {
+  padding: 30px;
+}
+
+.main .cards__wrapper .card .card__content h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.main .cards__wrapper .card .card__content p {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #a3a5ae;
+}
+
+.main .cards__wrapper .card .card__content img {
+  margin-top: 50px;
+  float: right;
+}
+
+.main .cards__wrapper .card:first-of-type {
+  border-top: 5px solid #45d3d3;
+}
+
+.main .cards__wrapper .card:last-of-type {
+  border-top: 5px solid #549ef2;
+}
+
+.main .cards__wrapper .center__wrapper {
+  height: 550px;
+  width: 30.70175%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .cards__wrapper .center__wrapper .card {
+  width: 100%;
+}
+
+.main .cards__wrapper .center__wrapper .card:first-of-type {
+  border-top: 5px solid #ea5353;
+}
+
+.main .cards__wrapper .center__wrapper .card:last-of-type {
+  border-top: 5px solid #fcaf4a;
+}
+
+@media (max-width: 768px) {
+  .main .main__title {
+    width: 80%;
+  }
+  .main .cards__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .cards__wrapper .card {
+    width: 80%;
+  }
+  .main .cards__wrapper .card:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .main .cards__wrapper .center__wrapper {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
